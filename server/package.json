@@ -4,12 +4,13 @@
   "description": "organizer",
   "main": "index.js",
   "engines": {
-    "node": "12.18.4",
-    "npm":"6.14.6"
-  },
+    "node": "v12.18.4",
+    "npm": "6.14.6"
+},
+
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
+    "start": "node run server.js",
+    "server": "nodemon run server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
