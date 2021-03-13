@@ -17,6 +17,8 @@ app.use(express.json());
 
 app.use("/api/transactions", transactions);
 
+app.get('/', (req,res) => {res.send('Welcome to zeenux')})
+
 const port = process.env.PORT || 5500;
 
 app.listen(port, console.log(`Server logged on port: ${port}`));
